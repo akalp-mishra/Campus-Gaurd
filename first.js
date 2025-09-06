@@ -1,0 +1,10 @@
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username.trim() === '' || password.trim() === '') {
+        alert('Please enter both username and password.');
+        event.preventDefault(); // Prevent form submission
+    }
+    // More complex client-side validation can be added here (e.g., password strength)
+});
