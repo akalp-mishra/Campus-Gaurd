@@ -11,10 +11,10 @@ const teacher_schema=new mongoose.Schema({
         index :true
     },
     email:{
-    type: String,
-    required: true,
-    unique: true,
-    lowercase:true
+        type: String,
+        required: true,
+        unique: true,
+        lowercase:true
     },
     password:{
         type:String,
@@ -36,7 +36,7 @@ const teacher_schema=new mongoose.Schema({
         type:Number,
         required:true
     },
-        address:{
+    address:{
         type:String,
         required:true
     },
